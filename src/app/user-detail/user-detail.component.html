@@ -1,0 +1,25 @@
+<app-spinner *ngIf="loading;else detail"></app-spinner>
+<ng-template #detail>
+  <div>
+    <div class="back-btn">
+      <a  [routerLink]="[ '/']">Back</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="details">
+
+      <div class="img-section">
+        <img [src]="userDetail.avatar">
+      </div>
+      <div class="info">
+          <div class="name">{{userDetail.first_name}} {{userDetail.last_name}}</div>
+          <div><a class="email" href="mailto:{{userDetail.email}}">{{userDetail.email}}</a></div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+</ng-template>

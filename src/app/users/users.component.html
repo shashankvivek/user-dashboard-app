@@ -1,0 +1,15 @@
+<app-spinner *ngIf="loading;else userListTemplate"></app-spinner>
+<ng-template #userListTemplate>
+  <div class="canvas">
+    <app-user-card *ngFor="let item of users"
+                   [user]="item"
+                   [routerLink]="[ '/details', item.id ]"></app-user-card>
+  </div>
+
+  <hr>
+  <div class="pagination">
+    <app-paginator [totalPages]="totalPages"
+                   (pageChanges)="pageChanged($event)"
+                   [activePage]="activatedPage"></app-paginator>
+  </div>
+</ng-template>

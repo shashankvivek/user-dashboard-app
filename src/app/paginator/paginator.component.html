@@ -1,0 +1,10 @@
+<div class="pagination">
+  <a id="prev-btn" [ngClass]="{'disable': activePage < 2}" (click)="goToPreviousPage()">&laquo;</a>
+  <a class="pager"
+     *ngFor="let item of totalPageArr; let i = index"
+     (click)="pagerSelected(item)"
+     [ngClass]="{'active-page': item === activePage}">
+    <span>{{item}}</span>
+  </a>
+  <a id="next-btn" [ngClass]="{'disable': activePage > totalPageArr.length-1}" (click)="goToNextPage()">&raquo;</a>
+</div>

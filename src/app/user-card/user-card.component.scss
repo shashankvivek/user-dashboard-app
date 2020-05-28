@@ -1,0 +1,26 @@
+.card {
+    width: 200px;
+    text-align: center;
+    height: 210px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}

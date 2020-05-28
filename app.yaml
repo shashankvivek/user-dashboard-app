@@ -1,0 +1,20 @@
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+  - url: /
+    static_files: dist/test-proj/index.html
+    upload: dist/test-proj/index.html
+  - url: /
+    static_dir: dist/test-proj
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^(.*/)?.*\.yaml$
+  - ^LICENSE
