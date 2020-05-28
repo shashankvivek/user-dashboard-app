@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "test-proj": {
+    "user-dashboard-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/test-proj",
+            "outputPath": "dist/user-dashboard-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "test-proj:build"
+            "browserTarget": "user-dashboard-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "test-proj:build:production"
+              "browserTarget": "user-dashboard-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "test-proj:build"
+            "browserTarget": "user-dashboard-app:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "test-proj-e2e": {
+    "user-dashboard-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "test-proj:serve"
+            "devServerTarget": "user-dashboard-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "test-proj:serve:production"
+              "devServerTarget": "user-dashboard-app:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "test-proj"
+  "defaultProject": "user-dashboard-app"
 }
