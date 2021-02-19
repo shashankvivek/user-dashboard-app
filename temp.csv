@@ -2,5 +2,5 @@
 #datatype,string,long,dateTime:RFC3339,dateTime:RFC3339,dateTime:RFC3339,double,string,string,string,string
 #default,mean,,,,,,,,,
 ,result,table,_start,_stop,_time,_value,_field,_measurement,group_tag,id
-,,0,2021-02-19T11:38:38.5762768Z,2021-02-19T12:38:38.5762768Z,2021-02-19T11:38:50Z,0,materialAddition_load,Eaf4,testLoad,84715f0d-31b8-42da-a99f-3e65a274cb0f
-,,0,2021-02-19T11:38:38.5762768Z,2021-02-19T12:38:38.5762768Z,2021-02-19T11:39:00Z,1,materialAddition_load,Eaf4,testLoad,84715f0d-31b8-42da-a99f-3e65a274cb0f
+,,0,2021-02-19T11:38:38.5762768Z,2021-02-19T12:38:38.5762768Z,2021-02-19T11:38:50Z,0,materialAddition_load1,Eaf4,temperature,00000000-0000-0000-0000-000000000000
+,,0,2021-02-19T11:38:38.5762768Z,2021-02-19T12:38:38.5762768Z,2021-02-19T11:39:00Z,1,materialAddition_load1,Eaf4,temperature,00000000-0000-0000-0000-000000000000
